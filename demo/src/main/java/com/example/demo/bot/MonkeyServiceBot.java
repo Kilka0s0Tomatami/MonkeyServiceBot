@@ -40,12 +40,6 @@ public class MonkeyServiceBot extends TelegramLongPollingBot {
         INSTANCE = this;
     }
 
-
-    //public MonkeyServiceBot(@Value("${bot.token}") String botToken) {
-    //    super(botToken);
-    //    config = null;
-    //}
-
     @Override
     public String getBotUsername() {
         return config.getBotName();
@@ -114,30 +108,7 @@ public class MonkeyServiceBot extends TelegramLongPollingBot {
         //System.out.println(chatId);
     }
 
-    //private void confirmCommand(Long chatId, String userName) throws IOException {
-    //    var text = "Доступ подтвержден";
-    //    sendMessage(chatId, text);
 
-    //    HttpStatusCode http = "http://localhost:8080/";
-    //     ResponseEntity entity = new ResponseEntity(http://localhost:8080/);
-
-    //    }
-
-    //@Autowired
-    //private RestTemplate restTemplate;
-
-    // POST request
-
-    //public ResponseEntity<String> postExample(String url, Object request) {
-    //    HttpHeaders headers = new HttpHeaders();
-
-    //    headers.setContentType(MediaType.APPLICATION_JSON);
-
-    //    HttpEntity<Object> entity = new HttpEntity<>(request, headers);
-
-    //    return restTemplate.postForEntity(url, entity, String.class);
-
-    //}
 
 
     private void helpCommand(Long chatId, String userName) {
